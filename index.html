@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRKSH Hostel Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🏠 SRKSH Hostel Management Portal</h1>
+    <nav>
+      <a href="#" id="homeLink">Home</a>
+      <a href="#" id="loginLink">Login</a>
+      <a href="#" id="dashboardLink" class="hidden">Dashboard</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section id="home">
+      <h2>Welcome to SRKSH Hostel</h2>
+      <p>Manage your hostel life with ease — from room allocation to maintenance tickets, all in one place.</p>
+      <button id="getStarted">Get Started</button>
+    </section>
+
+    <section id="login" class="hidden">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label>Username</label>
+        <input type="text" id="username" required />
+        <label>Password</label>
+        <input type="password" id="password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p id="loginError" class="error hidden">Invalid username or password.</p>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <h2>Dashboard</h2>
+      <p>Welcome, <span id="userDisplay"></span> 👋</p>
+      <div class="card-container">
+        <div class="card">
+          <h3>Rooms</h3>
+          <p>View room allocations and details.</p>
+        </div>
+        <div class="card">
+          <h3>Maintenance</h3>
+          <p>Create or track maintenance requests.</p>
+        </div>
+        <div class="card">
+          <h3>Mess Menu</h3>
+          <p>Check the weekly mess schedule.</p>
+        </div>
+      </div>
+      <button id="logoutBtn">Logout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SRKSH Hackathon Team</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
